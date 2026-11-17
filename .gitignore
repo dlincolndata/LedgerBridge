@@ -9,3 +9,7 @@ build/
 .idea/
 .vscode/
 *.iml
+# Local Environment
+.env
+.env.*
+!.env.example
