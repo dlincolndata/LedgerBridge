@@ -1,0 +1,6 @@
+Entity_Name,Source_System,Target_Table,Field_Name,Data_Type,Grain,Time_Basis,Owner_Team
+CRM_Order,Salesforce,staging_orders,OrderId,String,Order Header,Created Date,Sales Ops
+CRM_Order_Line,Salesforce,staging_order_lines,LineItemId,String,Order Line Item,Created Date,Sales Ops
+ERP_Invoice,SAP S/4HANA,fact_invoices,BillingDocument,String,Invoice Header,Billing Date,Accounting
+ERP_Invoice_Line,SAP S/4HANA,fact_invoice_lines,NetAmount,Decimal,Invoice Line Item,Billing Date,Accounting
+ERP_Payment,SAP S/4HANA,fact_payments,ClearingDocument,String,Payment Clearing,Clearing Date,Treasury
