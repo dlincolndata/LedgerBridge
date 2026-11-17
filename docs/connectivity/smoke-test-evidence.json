@@ -1,0 +1,93 @@
+{
+    "connectivityMode": "SIMULATED",
+    "checks": [
+        {
+            "system": "SALESFORCE",
+            "scenario": "OAUTH2_CLIENT_CREDENTIALS",
+            "status": "SIMULATED",
+            "httpStatus": 200,
+            "endpoint": "https://example.my.salesforce.com/services/oauth2/token",
+            "blockerDetail": "CONNECTIVITY_MODE=SIMULATED (Live Salesforce Connected App credentials not bound)",
+            "redactedHeaders": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "client_secret": "***REDACTED***",
+                "client_id": "plac***REDACTED***"
+            },
+            "samplePayload": {
+                "access_token": "***REDACTED***",
+                "instance_url": "https://example.my.salesforce.com",
+                "token_type": "Bearer"
+            },
+            "timestamp": "2026-11-17T18:15:29.842478241Z"
+        },
+        {
+            "system": "SAP_S4HANA_CLOUD",
+            "scenario": "SAP_COM_0008",
+            "status": "SIMULATED",
+            "httpStatus": 200,
+            "endpoint": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner?$top=1&$format=json",
+            "blockerDetail": "CONNECTIVITY_MODE=SIMULATED (Blocked: SAP Student License lacks inbound Communication Arrangement provisioning)",
+            "redactedHeaders": {
+                "Authorization": "Basic ***REDACTED***",
+                "X-Company-Code": "1710",
+                "APIKey": "NONE"
+            },
+            "samplePayload": {
+                "d": {
+                    "results": [
+                        {
+                            "BusinessPartnerFullName": "Acme Enterprise Corp",
+                            "CompanyCode": "1710",
+                            "BusinessPartner": "1000142"
+                        }
+                    ]
+                }
+            },
+            "timestamp": "2026-11-17T18:15:29.842561415Z"
+        },
+        {
+            "system": "SAP_S4HANA_CLOUD",
+            "scenario": "SAP_COM_0176",
+            "status": "SIMULATED",
+            "httpStatus": 200,
+            "endpoint": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BILLING_DOCUMENT_REQUEST_SRV/$metadata",
+            "blockerDetail": "CONNECTIVITY_MODE=SIMULATED (Blocked: SAP Student License lacks inbound Communication Arrangement provisioning)",
+            "redactedHeaders": {
+                "Authorization": "Basic ***REDACTED***",
+                "X-Company-Code": "1710",
+                "APIKey": "NONE"
+            },
+            "samplePayload": {
+                "status": "METADATA_CONTRACT_VERIFIED",
+                "service": "API_BILLING_DOCUMENT_REQUEST_SRV"
+            },
+            "timestamp": "2026-11-17T18:15:29.842577739Z"
+        },
+        {
+            "system": "SAP_S4HANA_CLOUD",
+            "scenario": "SAP_COM_0120",
+            "status": "SIMULATED",
+            "httpStatus": 200,
+            "endpoint": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BILLING_DOCUMENT_SRV/A_BillingDocument?$top=1&$format=json",
+            "blockerDetail": "CONNECTIVITY_MODE=SIMULATED (Blocked: SAP Student License lacks inbound Communication Arrangement provisioning)",
+            "redactedHeaders": {
+                "Authorization": "Basic ***REDACTED***",
+                "X-Company-Code": "1710",
+                "APIKey": "NONE"
+            },
+            "samplePayload": {
+                "d": {
+                    "results": [
+                        {
+                            "CompanyCode": "1710",
+                            "BillingDocument": "90000481",
+                            "TransactionCurrency": "USD"
+                        }
+                    ]
+                }
+            },
+            "timestamp": "2026-11-17T18:15:29.842593092Z"
+        }
+    ],
+    "companyCode": "1710"
+}

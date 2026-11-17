@@ -18,3 +18,17 @@ management:
   endpoint:
     health:
       show-details: always
+
+ledgerbridge:
+  connectivity:
+    mode: ${CONNECTIVITY_MODE:SIMULATED}
+    salesforce:
+      instance-url: ${SF_INSTANCE_URL:https://example.my.salesforce.com}
+      client-id: ${SF_CLIENT_ID:placeholder}
+      client-secret: ${SF_CLIENT_SECRET:placeholder}
+    sap:
+      base-url: ${SAP_BASE_URL:https://sandbox.api.sap.com/s4hanacloud}
+      company-code: ${SAP_COMPANY_CODE:1710}
+      comm-user: ${SAP_COMM_USER:CC_LEDGERBRIDGE}
+      comm-password: ${SAP_COMM_PASSWORD:placeholder}
+      sandbox-api-key: ${SAP_SANDBOX_API_KEY:}
