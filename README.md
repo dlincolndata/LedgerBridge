@@ -94,6 +94,8 @@ Additional technical documentation and implementation walkthroughs will be organ
 
 ## Author
 
-**David**
+**David Lincoln III**
+
+https://linkedin.com/in/david-c-lincoln
 
 Enterprise Software Development | Salesforce | SAP | Java | CRM/ERP Integration
